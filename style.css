@@ -1,0 +1,56 @@
+
+
+.hero-title {
+    font-family: 'Playfair Display', serif; /* Fuente elegante */
+    font-size: 4rem; /* Tamaño grande */
+    font-weight: 700; /* Negrita */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para resaltar sobre el video */
+    line-height: 1.2; /* Ajuste del espacio entre líneas */
+}
+
+.hero-subtitle {
+    font-family: 'Lato', sans-serif; /* Fuente moderna */
+    font-size: 1.5rem;
+    font-weight: 300; /* Fuente ligera */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Sombra más ligera */
+    margin-top: 1rem;
+}
+
+.highlight {
+    color: #ffc107; /* Color dorado */
+    font-weight: 700; /* Negrita */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Asegura que el video esté detrás del contenido */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Oscurece el video para que el texto sea más legible */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
